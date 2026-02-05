@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edb42e33-8d64-462f-953a-9f59ef8af9d6" name="Changes" comment="создание проекта, ветка  main">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="edb42e33-8d64-462f-953a-9f59ef8af9d6" name="Changes" comment="добвлены линтеры, flake8, isort, mypy, black" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,11 +170,20 @@
       <option name="project" value="LOCAL" />
       <updated>1770312453138</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="добвлены линтеры, flake8, isort, mypy, black">
+      <option name="closed" value="true" />
+      <created>1770314318552</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770314318552</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="создание проекта, ветка  main" />
-    <option name="LAST_COMMIT_MESSAGE" value="создание проекта, ветка  main" />
+    <MESSAGE value="добвлены линтеры, flake8, isort, mypy, black" />
+    <option name="LAST_COMMIT_MESSAGE" value="добвлены линтеры, flake8, isort, mypy, black" />
   </component>
 </project>
