@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -12,6 +13,7 @@ DEBUG = True if os.getenv("DEBUG") == "True" else False
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = "users.User"
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -22,6 +24,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "users",
     "habits",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
@@ -54,15 +57,14 @@ TEMPLATES = [
 WSGI_APPLICATION = "config.wsgi.application"
 
 
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.getenv('NAME'),
-        'USER': os.getenv('USER'),
-        'PASSWORD': os.getenv('PASSWORD'),
-        'HOST': os.getenv('HOST'),
-        'PORT': os.getenv('PORT', default='5432'),
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.getenv("NAME"),
+        "USER": os.getenv("USER"),
+        "PASSWORD": os.getenv("PASSWORD"),
+        "HOST": os.getenv("HOST"),
+        "PORT": os.getenv("PORT", default="5432"),
     }
 }
 
@@ -92,5 +94,5 @@ USE_I18N = True
 USE_TZ = True
 
 
-
 STATIC_URL = "static/"
+
