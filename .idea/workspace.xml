@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edb42e33-8d64-462f-953a-9f59ef8af9d6" name="Changes" comment="созданы приложения">
+    <list default="true" id="edb42e33-8d64-462f-953a-9f59ef8af9d6" name="Changes" comment="созданы модель User и миграции">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/habits/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/habits/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770488169163</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="созданы модель User и миграции">
+      <option name="closed" value="true" />
+      <created>1770570040947</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1770570040947</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -126,6 +134,7 @@
     <MESSAGE value="branch_1  добавлен .gitignore и  .env" />
     <MESSAGE value="установлено django" />
     <MESSAGE value="созданы приложения" />
-    <option name="LAST_COMMIT_MESSAGE" value="созданы приложения" />
+    <MESSAGE value="созданы модель User и миграции" />
+    <option name="LAST_COMMIT_MESSAGE" value="созданы модель User и миграции" />
   </component>
 </project>
