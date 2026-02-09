@@ -8,6 +8,6 @@ from habits.views import PlaceViewSet
 apps_name = HabitsConfig.name
 
 router = DefaultRouter()
-router.register(r"places", PlaceViewSet, basename='place')
+router.register(r"places", PlaceViewSet, basename='places')
 
 urlpatterns = [] + router.urls

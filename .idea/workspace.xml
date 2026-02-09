@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edb42e33-8d64-462f-953a-9f59ef8af9d6" name="Changes" comment="начало работы с моделями для привчек, место, вознаграждения">
-      <change afterPath="$PROJECT_DIR$/habits/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/habits/urls.py" afterDir="false" />
+    <list default="true" id="edb42e33-8d64-462f-953a-9f59ef8af9d6" name="Changes" comment="вьюсет место">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/habits/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/habits/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/habits/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/habits/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/habits/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770573247403</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="вьюсет место">
+      <option name="closed" value="true" />
+      <created>1770608409961</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1770608409961</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -156,6 +158,7 @@
     <MESSAGE value="созданы приложения" />
     <MESSAGE value="созданы модель User и миграции" />
     <MESSAGE value="начало работы с моделями для привчек, место, вознаграждения" />
-    <option name="LAST_COMMIT_MESSAGE" value="начало работы с моделями для привчек, место, вознаграждения" />
+    <MESSAGE value="вьюсет место" />
+    <option name="LAST_COMMIT_MESSAGE" value="вьюсет место" />
   </component>
 </project>
