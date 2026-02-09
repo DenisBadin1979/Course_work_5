@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class HabitыConfig(AppConfig):
+class HabitsConfig(AppConfig):
     name = "habits"
