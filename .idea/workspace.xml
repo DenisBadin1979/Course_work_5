@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edb42e33-8d64-462f-953a-9f59ef8af9d6" name="Changes" comment="вьюсет место">
+    <list default="true" id="edb42e33-8d64-462f-953a-9f59ef8af9d6" name="Changes" comment="переопределен метод для места">
+      <change afterPath="$PROJECT_DIR$/users/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/habits/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/habits/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770608409961</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="переопределен метод для места">
+      <option name="closed" value="true" />
+      <created>1770660790957</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1770660790957</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,6 +169,7 @@
     <MESSAGE value="созданы модель User и миграции" />
     <MESSAGE value="начало работы с моделями для привчек, место, вознаграждения" />
     <MESSAGE value="вьюсет место" />
-    <option name="LAST_COMMIT_MESSAGE" value="вьюсет место" />
+    <MESSAGE value="переопределен метод для места" />
+    <option name="LAST_COMMIT_MESSAGE" value="переопределен метод для места" />
   </component>
 </project>
