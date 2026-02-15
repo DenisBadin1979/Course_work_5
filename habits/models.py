@@ -23,6 +23,9 @@ class Habit(models.Model):
         verbose_name_plural = "Привычки"
         ordering = ['action', 'place']
 
+    def __str__(self):
+        return self.action
+
 
 
 

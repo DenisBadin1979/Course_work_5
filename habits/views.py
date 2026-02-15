@@ -1,11 +1,12 @@
 from django.core.serializers import serialize
 from django.shortcuts import render
 from mypyc.primitives.exc_ops import raise_exception_op
-from rest_framework import viewsets, status
+from rest_framework import viewsets, status, generics
 from rest_framework.response import Response
 
-from habits.models import Place, Award
-from habits.serializers import PlaceSerializers, AwardSerializers
+from habits.models import Place, Award, Habit
+from habits.pagination import HabitPagination
+from habits.serializers import PlaceSerializers, AwardSerializers, HabitSerializers
 
 
 class PlaceViewSet(viewsets.ModelViewSet):
@@ -42,4 +43,23 @@ class AwardViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         serializer.save()
 
+class HabitListAPIView(generics.ListAPIView):
+    serializer_class = HabitSerializers
+    queryset = Habit.objects.all()
+    pagination_class = HabitPagination
 
+class HabitRetrieveAPIView(generics.RetrieveAPIView):
+    serializer_class = HabitSerializers
+    queryset = Habit.objects.all()
+
+class HabitCreateAPIView(generics.CreateAPIView):
+    serializer_class = HabitSerializers
+    queryset = Habit.objects.all()
+
+class HabitUpdateAPIView(generics.UpdateAPIView):
+    serializer_class = HabitSerializers
+    queryset = Habit.objects.all()
+
+class HabitDestroyAPIView(generics.DestroyAPIView):
+    serializer_class = HabitSerializers
+    queryset = Habit.objects.all()
