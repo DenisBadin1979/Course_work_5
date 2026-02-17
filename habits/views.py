@@ -6,6 +6,7 @@ from rest_framework.response import Response
 
 from habits.models import Place, Award, Habit
 from habits.pagination import HabitPagination
+from habits.permissions import IsOwnerOrPublicReadOnly
 from habits.serializers import PlaceSerializers, AwardSerializers, HabitSerializers
 
 
@@ -47,19 +48,33 @@ class HabitListAPIView(generics.ListAPIView):
     serializer_class = HabitSerializers
     queryset = Habit.objects.all()
     pagination_class = HabitPagination
+    permission_classes = [IsOwnerOrPublicReadOnly]  # проверка прав на уровне запроса
+
+    def get_queryset(self):
+        user = self.request.user
+        if user.is_authenticated:
+            # Авторизованный пользователь видит свои привычки и все публичные
+            return Habit.objects.filter(is_public=True) | Habit.objects.filter(user=user)
+        else:
+            # Анонимный пользователь видит только публичные
+            return Habit.objects.filter(is_public=True)
 
 class HabitRetrieveAPIView(generics.RetrieveAPIView):
     serializer_class = HabitSerializers
     queryset = Habit.objects.all()
+    permission_classes = [IsOwnerOrPublicReadOnly]
 
 class HabitCreateAPIView(generics.CreateAPIView):
     serializer_class = HabitSerializers
     queryset = Habit.objects.all()
+    permission_classes = [IsOwnerOrPublicReadOnly]
 
 class HabitUpdateAPIView(generics.UpdateAPIView):
     serializer_class = HabitSerializers
     queryset = Habit.objects.all()
+    permission_classes = [IsOwnerOrPublicReadOnly]
 
 class HabitDestroyAPIView(generics.DestroyAPIView):
     serializer_class = HabitSerializers
     queryset = Habit.objects.all()
+    permission_classes = [IsOwnerOrPublicReadOnly]
