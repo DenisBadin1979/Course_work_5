@@ -1,5 +1,6 @@
 from rest_framework import permissions
 
+
 class IsOwnerOrPublicReadOnly(permissions.BasePermission):
     """
     Разрешение:
@@ -7,9 +8,10 @@ class IsOwnerOrPublicReadOnly(permissions.BasePermission):
     - Для остальных методов требуется, чтобы пользователь был владельцем.
     - Создание (POST) разрешено только аутентифицированным пользователям.
     """
+
     def has_permission(self, request, view):
         # Для создания требуется аутентификация
-        if request.method == 'POST':
+        if request.method == "POST":
             return request.user and request.user.is_authenticated
         # Для остальных методов разрешаем на уровне запроса
         return True

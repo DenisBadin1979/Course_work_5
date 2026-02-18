@@ -1,10 +1,9 @@
-from rest_framework import viewsets, permissions
+from rest_framework import permissions, viewsets
 
 from users.models import User
 from users.permissions import IsOwnerOrReadOnly
 from users.serializers import UserSerializers
 
-from rest_framework import permissions
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
@@ -12,7 +11,7 @@ class UserViewSet(viewsets.ModelViewSet):
     permission_classes = [IsOwnerOrReadOnly]
 
     def get_permissions(self):
-        if self.action == 'create':
+        if self.action == "create":
             permission_classes = [permissions.AllowAny]
         else:
             permission_classes = [permissions.IsAuthenticated]

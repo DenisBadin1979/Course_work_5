@@ -1,7 +1,5 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
-from mypy.dmypy_server import AbstractSet
-
 
 class User(AbstractUser):
     tg_chat_id = models.CharField(

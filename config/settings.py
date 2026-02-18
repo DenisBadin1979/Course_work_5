@@ -101,49 +101,49 @@ STATIC_URL = "static/"
 
 # Настройки JWT-токенов
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
     ],
 }
 
 # Настройки срока действия токенов
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=15),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
 
 
 CELERY_BEAT_SCHEDULE = {
-    'task-every-1-days': {
-        'task': 'habits.tasks.some_task_1d',
-        'schedule': crontab(hour=0, minute=0),
+    "task-every-1-days": {
+        "task": "habits.tasks.some_task_1d",
+        "schedule": crontab(hour=0, minute=0),
     },
-    'task-every-2-days': {
-        'task': 'habits.tasks.some_task_2d',
-        'schedule': timedelta(days=2),
+    "task-every-2-days": {
+        "task": "habits.tasks.some_task_2d",
+        "schedule": timedelta(days=2),
     },
-    'task-every-3-days': {
-        'task': 'habits.tasks.some_task_3d',
-        'schedule': timedelta(days=3),
+    "task-every-3-days": {
+        "task": "habits.tasks.some_task_3d",
+        "schedule": timedelta(days=3),
     },
-    'task-every-4-days': {
-        'task': 'habits.tasks.some_task_4d',
-        'schedule': timedelta(days=4),
+    "task-every-4-days": {
+        "task": "habits.tasks.some_task_4d",
+        "schedule": timedelta(days=4),
     },
-    'task-every-5-days': {
-        'task': 'habits.tasks.some_task_5d',
-        'schedule': timedelta(days=5),
+    "task-every-5-days": {
+        "task": "habits.tasks.some_task_5d",
+        "schedule": timedelta(days=5),
     },
-    'task-every-6-days': {
-        'task': 'habits.tasks.some_task_6d',
-        'schedule': timedelta(days=6),
+    "task-every-6-days": {
+        "task": "habits.tasks.some_task_6d",
+        "schedule": timedelta(days=6),
     },
-    'task-every-7-days': {
-        'task': 'habits.tasks.some_task_7d',
-        'schedule': timedelta(days=7),
+    "task-every-7-days": {
+        "task": "habits.tasks.some_task_7d",
+        "schedule": timedelta(days=7),
     },
 }
-CELERY_BROKER_URL = "redis://redis:6379/0" # Например, Redis, который по умолчанию работает на порту 6379
+CELERY_BROKER_URL = "redis://redis:6379/0"  # Например, Redis, который по умолчанию работает на порту 6379
 
 # URL-адрес брокера результатов, также Redis
 CELERY_RESULT_BACKEND = "redis://redis:6379/0"
@@ -157,5 +157,5 @@ CELERY_TASK_TRACK_STARTED = True
 # Максимальное время на выполнение задачи
 CELERY_TASK_TIME_LIMIT = 30 * 60
 
-TELEGRAM_URL ="https://api.telegram.org/bot"
-TELEGRAM_TOKEN =os.getenv("TELEGRAM_TOKEN")
+TELEGRAM_URL = "https://api.telegram.org/bot"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
