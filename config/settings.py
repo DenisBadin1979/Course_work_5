@@ -103,6 +103,7 @@ STATIC_URL = "static/"
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework_simplejwt.authentication.JWTAuthentication",
+        "rest_framework.authentication.BasicAuthentication",
     ],
 }
 
@@ -159,3 +160,7 @@ CELERY_TASK_TIME_LIMIT = 30 * 60
 
 TELEGRAM_URL = "https://api.telegram.org/bot"
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+

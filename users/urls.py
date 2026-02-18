@@ -8,7 +8,7 @@ from users.views import UserViewSet
 
 # from users.views import UserViewSet
 
-apps_name = UsersConfig.name
+app_name = UsersConfig.name
 
 router = DefaultRouter()
 router.register(r"users", UserViewSet, basename="user")

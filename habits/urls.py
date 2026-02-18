@@ -7,7 +7,7 @@ from habits.views import (AwardViewSet, HabitCreateAPIView,
                           HabitRetrieveAPIView, HabitUpdateAPIView,
                           PlaceViewSet)
 
-apps_name = "habits"
+app_name = HabitsConfig.name
 
 router = DefaultRouter()
 router.register(r"places", PlaceViewSet, basename="places")
