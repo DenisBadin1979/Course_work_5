@@ -43,20 +43,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
- 
-
-    - name: Cache dependencies
-      uses: actions/cache@v4
-      with:
-        path: ~/.cache/pypoetry
-        key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-poetry-
-
-    - name: Install dependencies
-      run: |
-        poetry install --no-interaction --no-root --with lint
-
     - name: Makemigrations
       env:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
@@ -65,7 +51,7 @@ jobs:
         PASSWORD: 12345
         HOST: localhost
         PORT: 5432
-      run: poetry run python manage.py makemigrations
+      run: python manage.py makemigrations
     - name: Run tests
       env:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
@@ -74,7 +60,7 @@ jobs:
         PASSWORD: 12345
         HOST: localhost
         PORT: 5432
-      run: poetry run python manage.py test
+      run: python manage.py test
 
 
   build:
