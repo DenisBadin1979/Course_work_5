@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edb42e33-8d64-462f-953a-9f59ef8af9d6" name="Changes" comment="на тестах но пока проваливаются">
+    <list default="true" id="edb42e33-8d64-462f-953a-9f59ef8af9d6" name="Changes" comment="версия 1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/habits/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/habits/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;branch__1&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#1 on branch__1&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/mypython/Cuorse_work_5/config&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
@@ -208,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771386570224</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="версия 1.0">
+      <option name="closed" value="true" />
+      <created>1771433815195</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1771433815195</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -228,6 +236,7 @@
     <MESSAGE value="уже на сообщение для бота" />
     <MESSAGE value="сообщение о привычке" />
     <MESSAGE value="на тестах но пока проваливаются" />
-    <option name="LAST_COMMIT_MESSAGE" value="на тестах но пока проваливаются" />
+    <MESSAGE value="версия 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="версия 1.0" />
   </component>
 </project>
